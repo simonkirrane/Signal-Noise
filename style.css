@@ -48,7 +48,7 @@ body.light-body {
 
 /* Document Layout Container */
 .document-container {
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 110px auto 4rem auto;
     padding: 0 2rem;
     display: flex;
