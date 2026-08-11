@@ -50,7 +50,7 @@ body.light-body {
 .document-container {
     max-width: 1500px;
     margin: 110px auto 4rem auto;
-    padding: 0 2rem;
+    padding: 0 4rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -267,4 +267,53 @@ body.light-body {
     .doc-section { padding: 2.5rem 1.5rem; }
     .metrics-grid { grid-template-columns: 1fr; }
     .doc-section h1 { font-size: 2rem; }
+}
+/* =========================================
+   Mobile Responsiveness (Screens under 768px)
+   ========================================= */
+@media (max-width: 768px) {
+    
+    /* 1. Header Adjustments */
+    .site-header { 
+        padding: 0 1.5rem; 
+    }
+    .header-nav { 
+        display: none; /* Hides the top nav links so they don't clutter small screens */
+    }
+
+    /* 2. Main Container & Spacing */
+    .document-container {
+        margin: 90px auto 2rem auto; /* Reduces the top margin */
+        padding: 0 1rem; /* Pulls the edges slightly closer to the screen border */
+        gap: 2rem; /* Reduces the huge gaps between sections */
+    }
+
+    /* 3. Section Cards */
+    .doc-section { 
+        padding: 2.5rem 1.5rem; /* Drastically reduces the thick internal padding for small screens */
+    }
+
+    /* 4. Typography Scaling */
+    .doc-section h1 { 
+        font-size: 2rem; /* Shrinks the massive headlines so they fit neatly */
+        margin-bottom: 1.5rem;
+    }
+    
+    .editorial-quote {
+        font-size: 1.1rem;
+        padding-left: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    /* 5. Force Single Columns for Grids & Flex Layouts */
+    .metrics-grid { 
+        grid-template-columns: 1fr; /* Forces the two stats boxes to stack on top of each other */
+        gap: 1.5rem;
+    }
+
+    .action-step-item {
+        flex-direction: column; /* Stacks the step number above the text */
+        gap: 1rem;
+        padding: 1.5rem;
+    }
 }
