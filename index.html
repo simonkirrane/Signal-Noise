@@ -2,159 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Signal/Noise — Simon Kirrane. The Complete Guide to Structured Data and Knowledge Graphs for AI Search.">
-    <link rel="canonical" href="https://signal.simonkirrane.com/">
-    <title>Signal/Noise — Simon Kirrane</title>
+    <title>Signal/Noise | Simon Kirrane</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="SK.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="os-body">
+<body>
 
-    <!-- Top OS Status Bar -->
-    <header class="os-header">
-        <div class="os-brand">
-            <span class="os-dot red"></span>
-            <span class="os-dot yellow"></span>
-            <span class="os-dot green"></span>
-            <!-- Title with distinct strap -->
-            <div class="brand-title-group">
-                <span class="brand-main">Signal/Noise</span>
-                <span class="brand-strap">Creating Clarity For LLM Discovery</span>
-            </div>
-        </div>
-        <div class="os-nav-links">
-            <a href="#narrative">The Shift</a>
-            <a href="#blindspot">The Blind Spot</a>
-            <a href="#casestudy">Live Data</a>
-            <a href="#framework">Action Plan</a>
-        </div>
-    </header>
+    <!-- Section 1: Sticks & Stones -->
+    <section class="os-section">
+        <div class="noise-bg"></div>
+        <span class="section-tag">Core Narrative</span>
+        <h1>Traditional SEO is gone.</h1>
+        <p>Google has shifted from a doorway into a final destination. Search engines now provide direct answers via AI summaries (AIO), causing over half of all searches to end without a click[cite: 4].</p>
+    </section>
 
-    <!-- Main Continuous Scrolling Container -->
-    <main class="os-main">
+    <!-- Section 2: AI Procurement -->
+    <section class="os-section">
+        <h2>AI Procurement is Coming</h2>
+        <p>AI Agents are looking at procurement. If LLMs can't parse your data, you stop turning up. 64% of CSCOs and COOs report GenAI is transforming their supply chain workflows[cite: 4].</p>
+        <span class="citation">Source: IBM — AI Agents in Procurement</span>
+    </section>
 
-        <!-- SECTION 1: HERO PARALLAX -->
-        <section class="os-section hero-parallax" id="narrative">
-            <div class="hero-content">
-                <span class="badge-glow">Core Narrative</span>
-                <h1>LLMS Can't read Noise - so create your Signal</h1>
-                <p class="hero-lead">Search engines used to be a doorway; now via AI summaries (AIO) they are a window, causing over half of all searches to end without a click. With the rise in Procurement LLMs the impact for Product will grow.</p>
-                <div class="stat-callout-row">
-                    <div class="mini-stat">
-                        <span class="num">64%</span>
-                        <span class="label">COOs/CSCOs say GenAI is already transforming supply chain operations workflows</span>
-                    </div>
-                    <div class="mini-stat">
-                        <span class="num">100%</span>
-                        <span class="label">Dependency on machine-readable entity mapping</span>
-                    </div>
-                </div>
-        </section>
+    <!-- Section 3: Paradigm Shift -->
+    <section class="os-section">
+        <h2>From Rich Snippets to Machine Maps</h2>
+        <p>Schema is now a translation layer. Generative engines don't index text strings—they synthesize structured entities. <em>Inference is much less reliable than instruction</em>[cite: 4].</p>
+        <span class="citation">Source: Aggarwal et al. (Princeton/Georgia Tech) — GEO: Generative Engine Optimization (arXiv:2311.09735)</span>
+    </section>
 
-        <!-- SECTION 2: THE PARADIGM SHIFT -->
-        <section class="os-section" id="blindspot">
-            <div class="container-grid">
-                <div class="text-block">
-                    <span class="section-tag">The Paradigm Shift</span>
-                    <h2>From Rich Snippets to Machine Maps</h2>
-                    <p>Google Schema used to be about ranking top in the list of blue links (SERPs). Today, Schema acts as a critical layer of translation between human-focused web content and AI data engines.</p>
-                    <p>Generative search engines and LLMs don't just index text strings—they synthesise structured entities and measure relationships. <em>And for LLMs inference is much less reliable than instruction.</em></p>
-                </div>
+    <!-- Section 4: Confusion -->
+    <section class="os-section">
+        <h2>Confusion Can Cause Chaos</h2>
+        <p>Internal inconsistency is our biggest blind spot. Marketing calls it a 'Product', docs call it an 'App', and pages lack schema. This erodes entity confidence[cite: 4].</p>
+        <span class="citation">Source: Space & Story — The Complete Guide to Structured Data; TallmanCode — Schema JSON-LD & LLMs</span>
+    </section>
 
-                <!-- Floating OS Window: The Blind Spot -->
-                <div class="os-window">
-                    <div class="window-titlebar">
-                        <div class="buttons"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-                        <div class="title">audit_log_inconsistency.json</div>
-                    </div>
-                    <div class="window-body">
-                        <h3>Our Biggest Blind Spot: Internal Inconsistency</h3>
-                        <p class="alert-text">When marketing labels a tool a <strong>'Product'</strong>, Marketplace calls it an <strong>'App'</strong>, and sales copy uses unaligned metaphors, machine crawlers get mixed signals.</p>
-                        <div class="code-snippet">
-                            <code>
-                                // Example Discrepancy:<br>
-                                • Website Site: "Product"<br>
-                                • Marketplace: "SoftwareApp"<br>
-                                • Docs Portal: No Schema Found
-                            </code>
-                        </div>
-                        <p class="window-footer-note">Result: LLMs are forced to guess what you are selling.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Section 5: Case Study -->
+    <section class="os-section">
+        <h2>Keyword Cannibalisation</h2>
+        <p>Kolekti used 'Confluence' as a bellwether. When we cannibalised the term with two descriptions, ranking plummeted. Consolidation was the only way to recover[cite: 4].</p>
+        <span class="citation">Source: Studio 36 Digital — Keyword Cannibalisation Study | SEOsilla / Ahrefs Framework</span>
+    </section>
 
-        <!-- SECTION 3: LIVE CASE STUDY -->
-        <section class="os-section dark-section" id="casestudy">
-            <div class="container-grid reverse">
-                <div class="os-window dark-win">
-                    <div class="window-titlebar">
-                        <div class="buttons"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-                        <div class="title">live_case_study_confluence.chart</div>
-                    </div>
-                    <div class="window-body">
-                        <h3>Keyword Ranking Trend: "Confluence"</h3>
-                        <div class="chart-simulation">
-                            <div class="chart-line-desc">
-                                <span class="node start">Nov-23: Rank 65</span>
-                                <span class="node mid">Feb-24: Rank 33 (Cannibalisation Plateau)</span>
-                                <span class="node end">May-24: Rank 19 (Post-Consolidation Recovery)</span>
-                            </div>
-                        </div>
-                        <p class="chart-caption"><strong>The Data Story:</strong> When duplicate descriptions compete, AI penalises authority. Removing duplication restored clean rank progression.</p>
-                    </div>
-                </div>
+    <!-- Section 6: Knowledge Graph -->
+    <section class="os-section">
+        <h2>Build a Coherent Knowledge Graph</h2>
+        <p>We need an interconnected graph to link entities: <em>Organisation → Author; Software → Features</em>. Schema is the bedrock to translate into all other messaging[cite: 4].</p>
+        <span class="citation">Source: WordLift / AI Marketing Club — Build a Knowledge Graph That AI Can't Ignore</span>
+    </section>
 
-                <div class="text-block">
-                    <span class="section-tag">Live Case Study</span>
-                    <h2>Keyword Cannibalisation Can Inform The Debate</h2>
-                    <p>In the traditional SEO era, if we designated two pages for a single term, Google split rankings. Today, machines lack nuance when handling mixed signals.</p>
-                    <p>By using the term <em>'Confluence'</em> as a bellwether, we tracked a sudden ranking drop due to internal duplication. Consolidating the entity path re-established clear authority.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 4: THE FRAMEWORK & ACTION PLAN -->
-        <section class="os-section" id="framework">
-            <div class="framework-header">
-                <span class="section-tag">Governance & Standardisation</span>
-                <h2>Schema as an Operational Framework</h2>
-                <p>Schema isn't just a technical SEO trick for developers; it is an operational standard for team content alignment.</p>
-            </div>
-
-            <div class="steps-grid">
-                <div class="step-card">
-                    <span class="step-num">01</span>
-                    <h3>Standardise Vocabulary</h3>
-                    <p>Establish agreed naming conventions for core products and software across all team silos.</p>
-                </div>
-                <div class="step-card">
-                    <span class="step-num">02</span>
-                    <h3>Implement Cross-Entity Schema</h3>
-                    <p>Deploy agreed schema for organisations, apps, authors, and touchpoints using 'Same As' pointers.</p>
-                </div>
-                <div class="step-card">
-                    <span class="step-num">03</span>
-                    <h3>Enforce Single Canonical Paths</h3>
-                    <p>Protect entity authority and stop internal content drift before publishing.</p>
-                </div>
-            </div>
-
-            <div class="closing-banner">
-                <h3>"We are no longer just putting up signposts for search crawlers, we are building the map that AI relies on to navigate the entire space."</h3>
-                <a href="mailto:simonkirrane1@gmail.com" class="os-cta-btn">Initiate Contact →</a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="os-footer">
-        <p>© 2026 Simon Kirrane. Hosted via GitHub Pages on signal.simonkirrane.com.</p>
-    </footer>
+    <!-- Section 7: Action Plan -->
+    <section class="os-section">
+        <h2>Governance: The Way Forward</h2>
+        <p>1. Standardise Vocabulary. 2. Implement Cross-Entity Schema. 3. Enforce Single Canonical Paths. We are building the map that AI relies on to navigate the space[cite: 4].</p>
+        <span class="citation">Source: Search Engine Land — What Is the Knowledge Graph?</span>
+    </section>
 
 </body>
 </html>
