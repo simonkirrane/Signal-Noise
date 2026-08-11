@@ -2,60 +2,243 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Signal/Noise | Simon Kirrane</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signal/Noise — Simon Kirrane. The Complete Guide to Structured Data and Knowledge Graphs for AI Search.">
+    <link rel="canonical" href="https://signal.simonkirrane.com/">
+    <title>Signal/Noise — Simon Kirrane</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="SK.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="signal-body">
 
-    <!-- Section 1: Sticks & Stones -->
-    <section class="os-section">
-        <div class="noise-bg"></div>
-        <span class="section-tag">Core Narrative</span>
-        <h1>Traditional SEO is gone.</h1>
-        <p>Google has shifted from a doorway into a final destination. Search engines now provide direct answers via AI summaries (AIO), causing over half of all searches to end without a click[cite: 4].</p>
-    </section>
+    <!-- Atmospheric Noise Texture Layer -->
+    <div class="noise-overlay"></div>
 
-    <!-- Section 2: AI Procurement -->
-    <section class="os-section">
-        <h2>AI Procurement is Coming</h2>
-        <p>AI Agents are looking at procurement. If LLMs can't parse your data, you stop turning up. 64% of CSCOs and COOs report GenAI is transforming their supply chain workflows[cite: 4].</p>
-        <span class="citation">Source: IBM — AI Agents in Procurement</span>
-    </section>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="brand">
+            <span class="brand-title">Signal/Noise</span>
+            <span class="brand-subtitle">Architecting for the AI Era</span>
+        </div>
+        <div class="nav-meta">
+            <span>Simon Kirrane</span>
+        </div>
+    </header>
 
-    <!-- Section 3: Paradigm Shift -->
-    <section class="os-section">
-        <h2>From Rich Snippets to Machine Maps</h2>
-        <p>Schema is now a translation layer. Generative engines don't index text strings—they synthesize structured entities. <em>Inference is much less reliable than instruction</em>[cite: 4].</p>
-        <span class="citation">Source: Aggarwal et al. (Princeton/Georgia Tech) — GEO: Generative Engine Optimization (arXiv:2311.09735)</span>
-    </section>
+    <!-- Main Layout Grid with Sticky Side Index -->
+    <div class="site-wrapper">
 
-    <!-- Section 4: Confusion -->
-    <section class="os-section">
-        <h2>Confusion Can Cause Chaos</h2>
-        <p>Internal inconsistency is our biggest blind spot. Marketing calls it a 'Product', docs call it an 'App', and pages lack schema. This erodes entity confidence[cite: 4].</p>
-        <span class="citation">Source: Space & Story — The Complete Guide to Structured Data; TallmanCode — Schema JSON-LD & LLMs</span>
-    </section>
+        <!-- Sticky Side Index (TOC) -->
+        <aside class="side-index">
+            <span class="index-heading">Contents</span>
+            <ul>
+                <li><a href="#sec-1">1. Naming Things Matters</a></li>
+                <li><a href="#sec-2">2. Machine Maps</a></li>
+                <li><a href="#sec-3">3. Confusion & Chaos</a></li>
+                <li><a href="#sec-4">4. Knowledge Graph</a></li>
+                <li><a href="#sec-5">5. Operational Framework</a></li>
+                <li><a href="#sec-6">6. Clarity & Discovery</a></li>
+            </ul>
+        </aside>
 
-    <!-- Section 5: Case Study -->
-    <section class="os-section">
-        <h2>Keyword Cannibalisation</h2>
-        <p>Kolekti used 'Confluence' as a bellwether. When we cannibalised the term with two descriptions, ranking plummeted. Consolidation was the only way to recover[cite: 4].</p>
-        <span class="citation">Source: Studio 36 Digital — Keyword Cannibalisation Study | SEOsilla / Ahrefs Framework</span>
-    </section>
+        <!-- Scrolling Content Sections -->
+        <main class="content-container">
 
-    <!-- Section 6: Knowledge Graph -->
-    <section class="os-section">
-        <h2>Build a Coherent Knowledge Graph</h2>
-        <p>We need an interconnected graph to link entities: <em>Organisation → Author; Software → Features</em>. Schema is the bedrock to translate into all other messaging[cite: 4].</p>
-        <span class="citation">Source: WordLift / AI Marketing Club — Build a Knowledge Graph That AI Can't Ignore</span>
-    </section>
+            <!-- SECTION 1 -->
+            <section class="doc-section" id="sec-1">
+                <span class="section-tag">Sticks and stones</span>
+                <h2>Naming things matters</h2>
+                
+                <div class="content-block">
+                    <h4>Core Narrative: Traditional SEO is gone</h4>
+                    <p>Direct answers on results pages via AI summaries AIO, cause over half of all searches to end without a click. Google has shifted from a doorway into a final destination. And if you aren't in the LLM, you are invisible.</p>
+                </div>
 
-    <!-- Section 7: Action Plan -->
-    <section class="os-section">
-        <h2>Governance: The Way Forward</h2>
-        <p>1. Standardise Vocabulary. 2. Implement Cross-Entity Schema. 3. Enforce Single Canonical Paths. We are building the map that AI relies on to navigate the space[cite: 4].</p>
-        <span class="citation">Source: Search Engine Land — What Is the Knowledge Graph?</span>
-    </section>
+                <div class="content-block">
+                    <h4>Key Point: AI Procurement is Coming</h4>
+                    <p>In addition to LLMs, AI Agents are now looking at procurement and if they can’t understand or misconstrue your data, you will stop turning up.</p>
+                </div>
+
+                <blockquote class="pull-quote">
+                    "Marketeers want to appeal to emotions, to needs, to provide solutions… they need to continue to do that… they also need to ensure that what they are selling, to whom and for how much is also delivered unambiguously. Otherwise LLMs in search or procurement could ignore you."
+                </blockquote>
+
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="stat-num">64%</span>
+                        <p class="stat-desc">"Of the CSCOs and COOs surveyed, say gen AI is already transforming their supply chain operations workflows." <strong>— IBM</strong></p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">Semantic Layer</span>
+                        <p class="stat-desc">"Developing a universal semantic layer is now a must‑do for D&A leaders either leading or supporting AI." <strong>— Gartner</strong></p>
+                    </div>
+                </div>
+
+                <div class="source-citation">
+                    📌 <strong>Source:</strong> <a href="https://www.ibm.com/think/topics/ai-agents-in-procurement" target="_blank">IBM — AI Agents in Procurement</a>
+                </div>
+            </section>
+
+            <!-- SECTION 2 -->
+            <section class="doc-section" id="sec-2">
+                <span class="section-tag">The Paradigm Shift</span>
+                <h2>From Rich Snippets to Machine Maps</h2>
+                
+                <div class="content-block">
+                    <h4>Core Narrative: Traditional to AI-Readable</h4>
+                    <p>Google Schema used to be about ranking top in the list of blue links (SERPS). Today, it’s a layer of translation between human-focussed web content and AI data engines.</p>
+                </div>
+
+                <div class="content-block">
+                    <h4>Key Point: Structured Entities over Strings</h4>
+                    <p>Generative search engines (Various LLMs, AI Overviews) don't just index text strings, they synthesise structured entities and measure relationships.</p>
+                </div>
+
+                <blockquote class="pull-quote highlight-quote">
+                    "Inference is much less reliable than instruction."
+                </blockquote>
+
+                <p>Relying on LLMs to guess what our software or organisation is by expecting them to read human-focussed marketing content can lead to missed citations and a loss of control over our brand narrative.</p>
+
+                <div class="source-citation">
+                    📌 <strong>Source:</strong> <a href="https://arxiv.org/abs/2311.09735" target="_blank">Aggarwal et al. (Princeton / Georgia Tech) – GEO: Generative Engine Optimisation (arXiv:2311.09735)</a>
+                </div>
+            </section>
+
+            <!-- SECTION 3 -->
+            <section class="doc-section" id="sec-3">
+                <span class="section-tag">The Core Problem</span>
+                <h2>Confusion Can Cause Chaos</h2>
+                
+                <div class="content-block">
+                    <h4>Core Narrative: Our Biggest Blind Spot</h4>
+                    <p>Internal inconsistency is our biggest blind spot in the generative age. Relying on contradictory or misaligned labels weakens entity clarity.</p>
+                </div>
+
+                <div class="content-block">
+                    <h4>Key Point: Mixed Signals to Crawlers</h4>
+                    <p>When marketing labels a tool a ‘Product’, documentation calls it an ‘App’, sales copy uses metaphors, and pages lack consistent structured data, machine crawlers get mixed signals. For example, until August 2026 Google Schema for Mosaic on the Kolekti site was ‘Product’, on Atlassian’s MPAC Mosaic it was listed as ‘Software App’ and on Docs there still appears to be no schema at all.</p>
+                </div>
+
+                <div class="content-block">
+                    <h4>The Reality: Degrading Entity Confidence</h4>
+                    <p>By confusing the description of any entity we force search engines and LLMs to decode contradictory descriptions, read on-page marketing copy and Docs—all of which confuse the AI and erode their confidence.</p>
+                </div>
+
+                <blockquote class="pull-quote">
+                    "Structured data is defined as a standardized format for providing explicit information about a page's content to search engines and AI platforms." <strong>— Space and Story</strong>
+                </blockquote>
+
+                <div class="source-citation">
+                    📌 <strong>Source:</strong> <a href="https://spaceandstory.co/blog/structured-data-guide-ai-search-json-ld" target="_blank">Space & Story – The Complete Guide to Structured Data for AI Search</a>
+                </div>
+            </section>
+
+            <!-- SECTION 4 -->
+            <section class="doc-section" id="sec-4">
+                <span class="section-tag">The Strategy</span>
+                <h2>Beyond App Schema: Build a Coherent Knowledge Graph</h2>
+                
+                <div class="content-block">
+                    <h4>Core Narrative: Beyond App Markup</h4>
+                    <p>Some initial studies suggest basic schema doesn't directly move traditional rankings, and that's fine, because we aren't stopping at standalone app markup.</p>
+                </div>
+
+                <div class="content-block">
+                    <h4>Key Point: AI Alignment</h4>
+                    <p>Structuring explicit entity relationships ensures that whether an LLM encounters our product via sales copy, docs, or third-party mentions, all nodes map back to a single source of truth. So we use Schema as the bedrock and then translate that into all other messaging.</p>
+                </div>
+
+                <div class="graph-box">
+                    <h5>Strategic Takeaway: Interconnected Graph</h5>
+                    <p>We need to build an interconnected, site-wide Knowledge Graph to link our key corporate entities:</p>
+                    <code>Organisation ➔ Author ➔ SoftwareApplication ➔ AppFeatures</code>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">This starts with the correct labelling of who we are, what we are offering and to whom.</p>
+                </div>
+
+                <blockquote class="pull-quote">
+                    "Developing a universal semantic layer is now a must‑do for D&A leaders either leading or supporting AI. It is the only way to improve accuracy, manage costs, substantially cut AI debt, align multiagent systems, and stop costly inconsistencies before they spread." <strong>— Gartner</strong>
+                </blockquote>
+
+                <div class="source-citation">
+                    📌 <strong>Source:</strong> <a href="https://www.gartner.com/en/newsroom/press-releases/2026-03-11-gartner-announces-top-predictions-for-data-and-analytics-in-2026" target="_blank">Gartner Predictions: Semantic Layers</a>
+                </div>
+            </section>
+
+            <!-- SECTION 5 -->
+            <section class="doc-section" id="sec-5">
+                <span class="section-tag">Governance & Standardisation</span>
+                <h2>Schema as an Operational Framework</h2>
+                
+                <div class="content-block">
+                    <h4>Core Narrative: Team Alignment</h4>
+                    <p>Schema isn't just a technical SEO trick for developers; it’s an operational standard for team content alignment.</p>
+                </div>
+
+                <div class="content-block">
+                    <h4>Key Point: Upfront Guardrails</h4>
+                    <p>Agreeing on naming, taxonomy, and entity labeling upfront sets clear guardrails across ALL content, product, and engineering teams. As Schema is the most stripped down, it makes sense to start there.</p>
+                </div>
+
+                <div class="content-block">
+                    <h4>Strategic Takeaway: Operational Harmony</h4>
+                    <p>Standardised schema ensures page content, metadata, and site architecture work in harmony, preventing future content drift and intent overlap before they ever hit production.</p>
+                </div>
+
+                <blockquote class="pull-quote">
+                    "Understanding how Google links entities in the Knowledge Graph can help to ensure that the entities and topics you want are connected to your brand. It can also uncover connections between entities you don’t want associated with your brand." <strong>— Search Engine Land</strong>
+                </blockquote>
+
+                <div class="source-citation">
+                    📌 <strong>Source:</strong> <a href="https://searchengineland.com/guide/knowledge-graph" target="_blank">Search Engine Land – What Is the Knowledge Graph? How It Impacts SEO & Visibility</a>
+                </div>
+            </section>
+
+            <!-- SECTION 6 -->
+            <section class="doc-section" id="sec-6">
+                <span class="section-tag">Summary & Action Plan</span>
+                <h2>The Way Forward: Clarity, Organisation, Discovery</h2>
+                
+                <div class="steps-container">
+                    <div class="step-item">
+                        <span class="step-number">1</span>
+                        <div>
+                            <h4>Standardise Vocabulary</h4>
+                            <p>Establish agreed naming conventions for core products and software across all team silos.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-number">2</span>
+                        <div>
+                            <h4>Implement Cross-Entity Schema</h4>
+                            <p>Deploy agreed schema for organisations, apps, authors, and any entity touchpoints. (The Sanity CMS has a ‘deploy once’ feature, if we don’t use that use a ‘Same As’ pointer.)</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-number">3</span>
+                        <div>
+                            <h4>Enforce Single Canonical Paths</h4>
+                            <p>Protect entity authority and stop internal confusion before publishing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closing-banner">
+                    <h4>Closing Thought</h4>
+                    <p>"We are no longer just putting up signposts for search crawlers, we are building the map that AI relies on to navigate the entire space."</p>
+                    <a href="mailto:simonkirrane1@gmail.com" class="action-btn">Connect on Templates & Architecture →</a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>© 2026 Simon Kirrane. Hosted via GitHub Pages on signal.simonkirrane.com.</p>
+    </footer>
 
 </body>
 </html>
