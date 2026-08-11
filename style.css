@@ -63,17 +63,62 @@ body.os-body {
     position: relative;
 }
 
-.hero-parallax { text-align: center; align-items: center; }
-.badge-glow { background: rgba(59, 130, 246, 0.15); color: var(--os-accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; }
-.hero-parallax h1 { font-size: 3.5rem; font-weight: 800; max-width: 900px; margin: 1.5rem 0; line-height: 1.15; }
-.hero-lead { font-size: 1.25rem; color: var(--text-muted); max-width: 700px; line-height: 1.6; margin-bottom: 3rem; }
-.scroll-prompt { margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted); animation: pulse 2s infinite; }
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-.stat-callout-row { display: flex; gap: 3rem; justify-content: center; }
-.mini-stat { text-align: left; }
-.mini-stat .num { display: block; font-size: 2.5rem; font-weight: 800; color: var(--os-accent); }
-.mini-stat .label { font-size: 0.85rem; color: var(--text-muted); max-width: 250px; }
+.hero-parallax h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin: 1.5rem 0;
+    line-height: 1.15;
+    text-align: center;
+}
 
+.hero-lead {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 720px; /* Constrains line length so it wraps cleanly */
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.stat-callout-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 1rem;
+}
+
+.mini-stat {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid var(--os-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center; /* Centers the stats inside neat equal-width cards */
+}
+
+.mini-stat .num {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--os-accent);
+    margin-bottom: 0.4rem;
+}
+
+.mini-stat .label {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
 /* Grid Layouts & Floating OS Windows */
 .container-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .container-grid.reverse { grid-template-columns: 1fr 1fr; }
