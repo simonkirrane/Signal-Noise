@@ -1,40 +1,75 @@
 :root {
-    --bg: #ffffff;
-    --text: #161616;
-    --muted: #525252;
-    --accent: #0f62fe;
+    --bg: #0f172a;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --accent: #3b82f6;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    font-family: 'Plex Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
     color: var(--text);
-    line-height: 1.5;
+    line-height: 1.6;
     background-color: var(--bg);
+    overflow-x: hidden;
 }
 
 .os-section {
     min-height: 100vh;
-    padding: 8rem 15vw;
-    border-bottom: 1px solid #e0e0e0;
+    padding: 6rem 10vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
-/* Typography for thin, elegant look */
-h1 { font-size: 3.5rem; font-weight: 300; margin-bottom: 2rem; letter-spacing: -0.05em; }
-h2 { font-size: 2.25rem; font-weight: 400; margin-bottom: 1.5rem; }
-p { font-size: 1.1rem; color: var(--muted); max-width: 700px; margin-bottom: 1rem; }
+.content-wrapper {
+    max-width: 800px;
+    z-index: 2;
+}
+
+.section-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+h1, h2 {
+    font-size: 2.75rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.15rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+}
 
 .noise-bg {
     background-image: url('noise.jpg');
     background-size: cover;
-    opacity: 0.05;
+    opacity: 0.04;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    z-index: -1;
+    z-index: 1;
+    pointer-events: none;
 }
 
-.citation { font-size: 0.75rem; color: #a8a8a8; margin-top: 2rem; display: block; }
+.citation {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 2rem;
+    display: block;
+    font-style: italic;
+}
