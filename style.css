@@ -317,3 +317,36 @@ body.light-body {
         padding: 1.5rem;
     }
 }
+/* Schema Strategy & Visual Container Additions */
+.schema-strategy-block {
+    background: #111;
+    color: #fff;
+    padding: 2.5rem;
+    border-radius: 2px;
+    margin: 2.5rem 0;
+}
+
+.schema-strategy-block p {
+    color: #a3a3a3;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.schema-strategy-block strong {
+    color: #fff;
+}
+
+.schema-strategy-block ul {
+    margin: 1.5rem 0;
+    padding-left: 1.25rem;
+    color: #a3a3a3;
+}
+
+.schema-strategy-block li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.graph-visual-container {
+    margin-top: 3rem;
+}
