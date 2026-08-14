@@ -216,11 +216,13 @@ body.light-body {
 
 /* Closing Thought */
 .closing-thought-box {
-    text-align: center;
-    background: var(--bg-light);
-    padding: 3rem 2rem;
-    margin-top: 3rem;
-    border-radius: 2px;
+    text-align: left;
+    background: #ffffff;
+    padding: 3rem 4rem;
+    margin-top: 4rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-line);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .closing-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-blue); font-weight: 600; display: block; margin-bottom: 1rem; }
