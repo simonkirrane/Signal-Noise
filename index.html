@@ -105,9 +105,10 @@
 
             <div class="schema-strategy-block">
                 <span class="code-label">Case in Point: How Brave Ask Actually Reads the Web</span>
+
                 <p><strong>This isn't theoretical.</strong> DEJAN AI's reverse-engineering of Brave's Ask system instructions shows the mechanism in production. Brave's pipeline doesn't hand a language model whole pages to interpret — it breaks roughly 210 retrieved pages down into an average of 6,257 discrete statements before the model ever sees them.</p>
-                <p>The model is explicitly instructed to ground every claim in that extracted evidence and is barred from filling gaps with its own knowledge. The same instructions require the model to disambiguate entities that share a name — mirroring the exact entity discipline needed across corporate channels.</p>
-            </div>
+        <p>The model is explicitly instructed to ground every claim in that extracted evidence and is barred from filling gaps with its own knowledge. Crucially, Brave's pipeline preserves and uses standard schemas (like JSON-LD and schema.org vocabularies) allowing extracted entities to map directly to established standards and ensuring explicit schema precision guides the AI engine. So you can guide the LLM, not have it guess.</p>
+    </div>
 
             <p class="body-copy">Humans like storytelling and that's what marketing copy does, it's nuanced and human. LLMs do not like nuance and storytelling, they like entities and relationships. So if we force LLMs to guess what our software or organisation is by making them read human-focussed marketing content can confuse them leading to poor or no Google results. With LLMs inference is much less reliable than instruction.</p>
             
