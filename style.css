@@ -225,11 +225,29 @@ body.light-body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.closing-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-blue); font-weight: 600; display: block; margin-bottom: 1rem; }
-.closing-thought-box p { font-family: 'IBM Plex Serif', serif; font-size: 1.25rem; font-style: italic; color: #000; max-width: 600px; margin: 0 auto 2rem auto; line-height: 1.5; }
+.closing-label { 
+    font-size: 0.75rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    color: var(--accent-blue); 
+    font-weight: 600; 
+    display: block; 
+    margin-bottom: 1rem; 
+}
+
+.closing-thought-box p { 
+    font-family: 'IBM Plex Serif', serif; 
+    font-size: 1.25rem; 
+    font-style: italic; 
+    color: #000; 
+    max-width: 100%;              /* Changed from 600px */
+    margin: 0 0 2rem 0;           /* Changed from 0 auto 2rem auto */
+    line-height: 1.5; 
+}
 
 .clean-cta-btn {
     display: inline-block;
+    margin-top: 0.5rem;           /* Added for breathing room */
     background: var(--text-main);
     color: #fff;
     padding: 0.8rem 2rem;
@@ -239,7 +257,10 @@ body.light-body {
     font-weight: 500;
     transition: background 0.2s;
 }
-.clean-cta-btn:hover { background: var(--accent-blue); }
+
+.clean-cta-btn:hover { 
+    background: var(--accent-blue); 
+}
 
 /* Source Footnotes */
 .source-foot {
