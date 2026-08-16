@@ -18,11 +18,12 @@ body.light-body {
 }
 
 /* Header Layout & Navigation Stacking */
+/* Header Layout & Navigation Stacking */
 .site-header {
     position: fixed;
-    top: 0; left: 0; width: 100%;
-    height: auto;
-    min-height: 70px;
+    top: 0; 
+    left: 0; 
+    width: 100%;
     background: rgba(244, 244, 246, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-line);
@@ -43,10 +44,11 @@ body.light-body {
 
 .header-nav { 
     display: flex; 
-    gap: 1.5rem; 
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding-top: 0.5rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .header-nav a {
@@ -57,7 +59,9 @@ body.light-body {
     transition: color 0.2s;
 }
 
-.header-nav a:hover { color: var(--text-main); }
+.header-nav a:hover { 
+    color: var(--text-main); 
+}
 
 /* Document Layout Container */
 .document-container {
