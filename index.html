@@ -277,16 +277,16 @@
 <div id="schema-runtime">
     <div class="runtime-card">
         <h2><span style="color:var(--accent-blue);">Signal</span>/Noise</h2>
-        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Enter Password.</p>
-        <input type="text" id="node-param" placeholder="Node parameter..." style="text-transform: none;" onkeydown="if(event.key === 'Enter') initRuntime()">
-        <button onclick="initRuntime()">Sync Node →</button>
-        <p id="runtime-error" class="runtime-error">Invalid node parameter.</p>
+        <p style="margin-bottom: 1rem;"></p>
+        <input type="text" id="node-param" placeholder="" style="text-transform: none;" onkeydown="if(event.key === 'Enter') initRuntime()">
+        <button onclick="initRuntime()">OK</button>
+        <p id="runtime-error" class="runtime-error" style="display:none;">.</p>
     </div>
 </div>
 
 <script>
 function initRuntime() {
-    const activeNodeKey = "SchemaStatic"; 
+const activeNodeKey = "Schema123!";
     const inputVal = document.getElementById('node-param').value.trim();
     
     if (inputVal === activeNodeKey) {
