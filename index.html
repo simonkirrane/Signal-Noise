@@ -273,35 +273,33 @@
 </head>
 <body class="light-body">
 
-    <!-- Password Gate Overlay -->
-<div id="password-gate">
-    <div class="gate-card">
+<!-- Schema Runtime Layer -->
+<div id="schema-runtime">
+    <div class="runtime-card">
         <h2><span style="color:var(--accent-blue);">Signal</span>/Noise</h2>
-        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Enter password to view.</p>
-        <input type="password" id="gate-pass" placeholder="Password..." onkeydown="if(event.key === 'Enter') checkPassword()">
-        <button onclick="checkPassword()">Access Document →</button>
-        <p id="error-text" class="error-msg">Incorrect password.</p>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Enter Password.</p>
+        <input type="text" id="node-param" placeholder="Node parameter..." style="text-transform: none;" onkeydown="if(event.key === 'Enter') initRuntime()">
+        <button onclick="initRuntime()">Sync Node →</button>
+        <p id="runtime-error" class="runtime-error">Invalid node parameter.</p>
     </div>
 </div>
 
 <script>
-function checkPassword() {
-    // 🔑 CHANGE 'secret123' TO WHATEVER PASSWORD YOU WANT
-    const correctPassword = "Ent1ty F1rst"; 
-    const inputVal = document.getElementById('gate-pass').value;
+function initRuntime() {
+    const activeNodeKey = "Ent1ty F1rst"; 
+    const inputVal = document.getElementById('node-param').value.trim();
     
-    if (inputVal === correctPassword) {
-        document.getElementById('password-gate').style.display = 'none';
-        sessionStorage.setItem('unlocked_signal', 'true');
+    if (inputVal === activeNodeKey) {
+        document.getElementById('schema-runtime').style.display = 'none';
+        sessionStorage.setItem('node_sync_active', 'true');
     } else {
-        document.getElementById('error-text').style.display = 'block';
+        document.getElementById('runtime-error').style.display = 'block';
     }
 }
 
-// Keeps it unlocked if you refresh during the same browser session
 window.addEventListener('DOMContentLoaded', () => {
-    if (sessionStorage.getItem('unlocked_signal') === 'true') {
-        document.getElementById('password-gate').style.display = 'none';
+    if (sessionStorage.getItem('node_sync_active') === 'true') {
+        document.getElementById('schema-runtime').style.display = 'none';
     }
 });
 </script>
