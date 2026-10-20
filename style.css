@@ -18,7 +18,6 @@ body.light-body {
 }
 
 /* Header Layout & Navigation Stacking */
-/* Header Layout & Navigation Stacking */
 .site-header {
     position: fixed;
     top: 0; 
@@ -57,6 +56,7 @@ body.light-body {
     font-size: 0.75rem;
     font-weight: 500;
     transition: color 0.2s;
+    cursor: pointer;
 }
 
 .header-nav a:hover { 
@@ -175,7 +175,7 @@ body.light-body {
     margin: 2rem 0;
 }
 
-.schema-code-block {
+.schema-code-block, .schema-strategy-block {
     background: #111;
     color: #fff;
     padding: 2.5rem;
@@ -192,7 +192,16 @@ body.light-body {
     margin-bottom: 0.75rem;
 }
 
-.schema-code-block p { color: #a3a3a3; font-size: 0.95rem; }
+.schema-code-block p, .schema-strategy-block p { 
+    color: #a3a3a3; 
+    font-size: 0.95rem; 
+    margin-bottom: 1rem;
+}
+
+.schema-strategy-block strong { color: #fff; }
+.schema-strategy-block ul { margin: 1.5rem 0; padding-left: 1.25rem; color: #a3a3a3; }
+.schema-strategy-block li { margin-bottom: 0.75rem; font-size: 0.95rem; }
+
 .schema-code-block code {
     display: block;
     background: #000;
@@ -257,14 +266,14 @@ body.light-body {
     font-size: 1.25rem; 
     font-style: italic; 
     color: #000; 
-    max-width: 100%;              /* Changed from 600px */
-    margin: 0 0 2rem 0;           /* Changed from 0 auto 2rem auto */
+    max-width: 100%; 
+    margin: 0 0 2rem 0; 
     line-height: 1.5; 
 }
 
 .clean-cta-btn {
     display: inline-block;
-    margin-top: 0.5rem;           /* Added for breathing room */
+    margin-top: 0.5rem; 
     background: var(--text-main);
     color: #fff;
     padding: 0.8rem 2rem;
@@ -300,160 +309,18 @@ body.light-body {
     border-top: 1px solid var(--border-line);
 }
 
+.graph-visual-container { margin-top: 3rem; }
+.brand-signal { font-family: 'IBM Plex Mono', monospace; font-weight: 500; letter-spacing: -0.02em; color: var(--accent-blue); }
+.brand-noise { font-family: 'IBM Plex Serif', serif; font-style: italic; font-weight: 300; letter-spacing: 0.05em; color: var(--text-main); }
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .site-header { padding: 0 1.5rem; }
     .header-nav { display: none; }
+    .document-container { margin: 90px auto 2rem auto; padding: 0 1rem; gap: 2rem; }
     .doc-section { padding: 2.5rem 1.5rem; }
-    .metrics-grid { grid-template-columns: 1fr; }
-    .doc-section h1 { font-size: 2rem; }
-}
-/* =========================================
-   Mobile Responsiveness (Screens under 768px)
-   ========================================= */
-@media (max-width: 768px) {
-    
-    /* 1. Header Adjustments */
-    .site-header { 
-        padding: 0 1.5rem; 
-    }
-    .header-nav { 
-        display: none; /* Hides the top nav links so they don't clutter small screens */
-    }
-
-    /* 2. Main Container & Spacing */
-    .document-container {
-        margin: 90px auto 2rem auto; /* Reduces the top margin */
-        padding: 0 1rem; /* Pulls the edges slightly closer to the screen border */
-        gap: 2rem; /* Reduces the huge gaps between sections */
-    }
-
-    /* 3. Section Cards */
-    .doc-section { 
-        padding: 2.5rem 1.5rem; /* Drastically reduces the thick internal padding for small screens */
-    }
-
-    /* 4. Typography Scaling */
-    .doc-section h1 { 
-        font-size: 2rem; /* Shrinks the massive headlines so they fit neatly */
-        margin-bottom: 1.5rem;
-    }
-    
-    .editorial-quote {
-        font-size: 1.1rem;
-        padding-left: 1.5rem;
-        margin: 2rem 0;
-    }
-
-    /* 5. Force Single Columns for Grids & Flex Layouts */
-    .metrics-grid { 
-        grid-template-columns: 1fr; /* Forces the two stats boxes to stack on top of each other */
-        gap: 1.5rem;
-    }
-
-    .action-step-item {
-        flex-direction: column; /* Stacks the step number above the text */
-        gap: 1rem;
-        padding: 1.5rem;
-    }
-}
-/* Schema Strategy & Visual Container Additions */
-.schema-strategy-block {
-    background: #111;
-    color: #fff;
-    padding: 2.5rem;
-    border-radius: 2px;
-    margin: 2.5rem 0;
-}
-
-.schema-strategy-block p {
-    color: #a3a3a3;
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-}
-
-.schema-strategy-block strong {
-    color: #fff;
-}
-
-.schema-strategy-block ul {
-    margin: 1.5rem 0;
-    padding-left: 1.25rem;
-    color: #a3a3a3;
-}
-
-.schema-strategy-block li {
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-}
-
-.graph-visual-container {
-    margin-top: 3rem;
-}
-.brand-signal {
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    color: var(--accent-blue);
-}
-
-.brand-noise {
-    font-family: 'IBM Plex Serif', serif;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    color: var(--text-main);
-}
-/* --- Schema Runtime Layer --- */
-#schema-runtime {
-    position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh;
-    background: var(--bg-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-}
-.runtime-card {
-    background: var(--card-white);
-    padding: 3rem;
-    border: 1px solid var(--border-line);
-    border-radius: 4px;
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-.runtime-card h2 {
-    font-family: 'IBM Plex Serif', serif;
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-}
-.runtime-card input {
-    width: 100%;
-    padding: 0.8rem;
-    margin: 1rem 0;
-    border: 1px solid var(--border-line);
-    border-radius: 2px;
-    font-size: 1rem;
-}
-.runtime-card button {
-    width: 100%;
-    background: var(--text-main);
-    color: #fff;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    font-weight: 500;
-}
-.runtime-card button:hover {
-    background: var(--accent-blue);
-}
-.runtime-error {
-    color: #dc2626;
-    font-size: 0.85rem;
-    margin-top: 0.75rem;
-    display: none;
+    .doc-section h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+    .editorial-quote { font-size: 1.1rem; padding-left: 1.5rem; margin: 2rem 0; }
+    .metrics-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .action-step-item { flex-direction: column; gap: 1.5rem; padding: 1.5rem; }
 }
