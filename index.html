@@ -156,55 +156,29 @@
             <span class="brand-name"><span class="brand-signal">Signal</span>/<span class="brand-noise">Noise</span></span>
             <span class="brand-desc">Simon Kirrane</span>
         </a>
-        <div class="header-actions">
-            <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
-                <span id="themeIcon">☀️</span> <span id="themeLabel">Light</span>
-            </button>
-        </div>
     </div>
     <nav class="header-nav" aria-label="Page Sections">
-        <a href="#sec-1" data-target="sec-1">01. The Landscape</a>
-        <a href="#sec-2" data-target="sec-2">02. Paradigm Shift</a>
-        <a href="#sec-3" data-target="sec-3">03. Core Problem</a>
-        <a href="#sec-4" data-target="sec-4">04. Strategy</a>
-        <a href="#sec-5" data-target="sec-5">05. Governance</a>
-        <a href="#sec-6" data-target="sec-6">06. Action Plan</a>
+        <a href="#sec-1">01. The Landscape</a>
+        <a href="#sec-2">02. Paradigm Shift</a>
+        <a href="#sec-3">03. Core Problem</a>
+        <a href="#sec-4">04. Strategy</a>
+        <a href="#sec-5">05. Governance</a>
+        <a href="#sec-6">06. Action Plan</a>
     </nav>
 </header>
 
 <!-- Main Editorial Document Container -->
 <main class="document-container" id="top">
 
-    <!-- HERO VISUAL & SIGNAL OSCILLOSCOPE -->
+    <!-- HERO BANNER -->
     <section class="hero-visual-card">
         <div class="hero-meta-tag">
-            <span class="hero-pulse-dot"></span>
             <span>Generative Engine Optimization (GEO) • 2026 Strategic Blueprint</span>
         </div>
         <h1 class="hero-title">The Complete Guide to Structured Data &amp; Knowledge Graphs for AI Search</h1>
         <p class="hero-subtitle">
             How structuring data for generative search engines prevents AI models, procurement agents, and zero-click answer engines from misinterpreting corporate reality.
         </p>
-
-        <!-- Interactive Signal vs. Noise Oscilloscope Simulator -->
-        <div class="oscilloscope-box">
-            <div class="oscilloscope-header">
-                <span class="oscilloscope-label">
-                    <span>⚡ Signal-to-Noise Ratio Analyzer</span>
-                    <span id="signalStatusBadge" style="color: #00f2fe; font-size: 0.72rem; padding: 2px 6px; background: rgba(0, 242, 254, 0.12); border-radius: 4px;">HIGH SIGNAL (92%)</span>
-                </span>
-                <div class="oscilloscope-controls">
-                    <label for="noiseSlider">Clarity Tuning:</label>
-                    <input type="range" id="noiseSlider" min="0" max="100" value="85" title="Adjust Signal/Noise clarity ratio">
-                    <span id="noiseValLabel" style="font-family: var(--font-mono); color: var(--accent-signal);">85% Signal</span>
-                </div>
-            </div>
-            <canvas id="signalCanvas"></canvas>
-            <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: #64748b; margin-top: 0.5rem; font-family: var(--font-mono);">
-                <span>← Chaotic Raw Metaphor (Unstructured)</span>
-                <span>Structured Entity Graph (Machine-Readable) →</span>
-            </div>
-        </div>
     </section>
 
     <!-- SECTION 1 -->
@@ -237,42 +211,9 @@
             </div>
         </div>
 
-        <!-- INTERACTIVE WIDGET 1: Interactive Semantic Hierarchy Explorer -->
-        <div class="interactive-hierarchy-widget">
-            <div class="widget-header">
-                <span class="widget-title">Interactive Model: The Semantic Hierarchy</span>
-                <span class="widget-hint">Click each stage to explore how meaning flows to AI</span>
-            </div>
-            <div class="hierarchy-steps">
-                <button class="hierarchy-step-btn active" data-step="0">
-                    <span class="step-badge">Stage 01</span>
-                    <span>REALITY</span>
-                </button>
-                <button class="hierarchy-step-btn" data-step="1">
-                    <span class="step-badge">Stage 02</span>
-                    <span>ONTOLOGY</span>
-                </button>
-                <button class="hierarchy-step-btn" data-step="2">
-                    <span class="step-badge">Stage 03</span>
-                    <span>SCHEMA</span>
-                </button>
-                <button class="hierarchy-step-btn" data-step="3">
-                    <span class="step-badge">Stage 04</span>
-                    <span>CONTENT</span>
-                </button>
-                <button class="hierarchy-step-btn" data-step="4">
-                    <span class="step-badge">Stage 05</span>
-                    <span>SEARCH &amp; AI</span>
-                </button>
-            </div>
-            <div class="hierarchy-detail-card" id="hierarchyDetailContent">
-                <!-- Dynamically populated by JS -->
-            </div>
-        </div>
-
         <div class="source-foot">
-            <span>📌 Source: <a href="https://marketingadvice.substack.com/p/ai-search-rewards-category-leaders" target="_blank" rel="noopener noreferrer">AI Search Rewards Category Leaders. Everyone Else Has to Fight Their Way In.</a></span>
-            <span>📌 Source: <a href="https://www.ibm.com/think/topics/ai-agents-in-procurement" target="_blank" rel="noopener noreferrer">IBM — AI Agents in Procurement</a></span>
+            <span>📌 Source: <a href="https://marketingadvice.substack.com/p/ai-search-rewards-category-leaders" target="_blank" rel="noopener noreferrer">AI Search Rewards Category Leaders. Everyone Else Has to Fight Their Way In.</a>[cite: 1]</span>
+            <span>📌 Source: <a href="https://www.ibm.com/think/topics/ai-agents-in-procurement" target="_blank" rel="noopener noreferrer">IBM — AI Agents in Procurement</a>[cite: 1]</span>
         </div>
     </section>
 
@@ -297,56 +238,6 @@
             <p>The model is explicitly instructed to ground every claim in that extracted evidence and is barred from filling gaps with its own knowledge. Separately, Brave's LLM Context API confirms this discipline extends to the retrieval layer itself: when converting pages into structured context for LLMs, the system preserves JSON-LD schemas and table data with row-level granularity, rather than flattening everything into raw text. Structured markup on the page survives the journey into the model's context — it isn't discarded in favour of prose.</p>
         </div>
 
-        <!-- INTERACTIVE WIDGET 2: LLM Simulator Lens -->
-        <div class="llm-lens-widget">
-            <div class="widget-header">
-                <span class="widget-title">Live Simulator: LLM Extraction Lens</span>
-                <span class="widget-hint">Toggle modes to see what generative retrieval pipelines extract</span>
-            </div>
-            <div class="llm-toggle-bar">
-                <button class="llm-toggle-btn active" id="btnLensNoSchema">
-                    <span>❌ <strong>Without Schema</strong> (Metaphor &amp; Prose Only)</span>
-                    <span style="font-size: 0.75rem; color: var(--accent-rose);">Low Entity Confidence</span>
-                </button>
-                <button class="llm-toggle-btn" id="btnLensSchema">
-                    <span>✅ <strong>With Canonical Schema</strong> (Explicit JSON-LD)</span>
-                    <span style="font-size: 0.75rem; color: var(--accent-emerald);">High Citation Certainty</span>
-                </button>
-            </div>
-            <div class="lens-view-grid">
-                <div class="lens-box">
-                    <span class="lens-box-title">
-                        <span>Human-Facing Marketing Copy</span>
-                        <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">PAGE CONTENT</span>
-                    </span>
-                    <p class="lens-copy-text" id="lensInputCopy">
-                        "Unlock next-gen synergy with our holistic cloud-native ecosystem. We supercharge cross-functional collaboration and streamline workflows at scale."
-                    </p>
-                    <div style="font-size: 0.78rem; color: var(--text-muted); background: var(--bg-subtle); padding: 0.75rem; border-radius: 4px;">
-                        💡 <em>Notice: Words like "ecosystem", "synergy", and "holistic" offer high emotional resonance to humans, but zero entity boundaries for AI crawlers.</em>
-                    </div>
-                </div>
-                <div class="lens-box">
-                    <span class="lens-box-title">
-                        <span>Synthesized LLM Knowledge Representation</span>
-                        <span id="lensConfidenceBadge" style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-rose); font-weight: 600;">AMBIGUOUS (42%)</span>
-                    </span>
-                    <div class="llm-output-card" id="lensOutputCode">
-                        <!-- Populated by JS -->
-                    </div>
-                    <div class="confidence-bar-wrap">
-                        <div class="confidence-label">
-                            <span>Entity Grounding Confidence</span>
-                            <span id="confidencePercent">42%</span>
-                        </div>
-                        <div class="confidence-progress">
-                            <div class="confidence-fill" id="confidenceBar"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <p class="body-copy">Humans like storytelling and that's what marketing copy does, it's nuanced and human. LLMs like entities and relationships. So if we force LLMs to guess what our software or organisation is by making them read human-focussed marketing content we can confuse them leading to poor or no results. With LLMs inference is much less reliable than instruction.</p>
         
         <blockquote class="editorial-quote">
@@ -354,9 +245,9 @@
         </blockquote>
         
         <div class="source-foot">
-            <span>📌 Source: <a href="https://www.yotpo.com/blog/generative-engine-optimization/" target="_blank" rel="noopener noreferrer">Yotpo – Generative Engine Optimization: The Complete Guide to Ranking in AI Search</a></span>
-            <span>📌 Source: <a href="https://dejan.ai/blog/brave-ai-search/" target="_blank" rel="noopener noreferrer">DEJAN AI – How Brave's AI Search Works</a></span>
-            <span>📌 Source: <a href="https://www.developer-tech.com/news/brave-search-api-revamp-makes-web-search-useful-for-ai-apps/" target="_blank" rel="noopener noreferrer">Developer Tech – Brave Search API revamp makes web search useful for AI apps</a></span>
+            <span>📌 Source: <a href="https://www.yotpo.com/blog/generative-engine-optimization/" target="_blank" rel="noopener noreferrer">Yotpo – Generative Engine Optimization: The Complete Guide to Ranking in AI Search</a>[cite: 1]</span>
+            <span>📌 Source: <a href="https://dejan.ai/blog/brave-ai-search/" target="_blank" rel="noopener noreferrer">DEJAN AI – How Brave's AI Search Works</a>[cite: 1]</span>
+            <span>📌 Source: <a href="https://www.developer-tech.com/news/brave-search-api-revamp-makes-web-search-useful-for-ai-apps/" target="_blank" rel="noopener noreferrer">Developer Tech – Brave Search API revamp makes web search useful for AI apps</a>[cite: 1]</span>
         </div>
     </section>
 
@@ -375,61 +266,6 @@
             <p>When marketing labels a tool a ‘Product’, documentation calls it an ‘App’, sales copy uses complex metaphors, and pages lack consistent structured data, machine crawlers get mixed signals. For example when I audited our Schema, I found our app was classified as 'Product' on our site, 'Software App' on the Marketplace, and absent from our documentation. We fixed this by establishing a single canonical definition ensuring every touchpoint used consistent entity typing.</p>
         </div>
 
-        <!-- INTERACTIVE WIDGET 3: Entity Ambiguity Auditor -->
-        <div class="auditor-widget">
-            <div class="widget-header">
-                <span class="widget-title">Interactive Audit: Cross-Channel Entity Drift Simulator</span>
-                <span class="widget-hint">Change labels across touchpoints to see how entity ambiguity destroys confidence</span>
-            </div>
-            <div class="auditor-grid">
-                <div class="auditor-card">
-                    <span class="auditor-touchpoint">🌐 Main Website</span>
-                    <select id="auditWeb" class="auditor-select">
-                        <option value="Product">"Product"</option>
-                        <option value="SoftwareApplication" selected>"SoftwareApplication"</option>
-                        <option value="Ecosystem">"Cloud Ecosystem"</option>
-                        <option value="Tool">"Free Tool"</option>
-                    </select>
-                </div>
-                <div class="auditor-card">
-                    <span class="auditor-touchpoint">📖 Documentation</span>
-                    <select id="auditDocs" class="auditor-select">
-                        <option value="None">"None (No Schema)"</option>
-                        <option value="SoftwareApplication" selected>"SoftwareApplication"</option>
-                        <option value="App">"Add-on App"</option>
-                        <option value="APIReference">"API Reference"</option>
-                    </select>
-                </div>
-                <div class="auditor-card">
-                    <span class="auditor-touchpoint">🛍️ Marketplace Listing</span>
-                    <select id="auditMarket" class="auditor-select">
-                        <option value="SoftwareApplication" selected>"SoftwareApplication"</option>
-                        <option value="Plugin">"Browser Plugin"</option>
-                        <option value="Product">"Product"</option>
-                        <option value="App">"App"</option>
-                    </select>
-                </div>
-                <div class="auditor-card">
-                    <span class="auditor-touchpoint">💼 Sales &amp; Deck</span>
-                    <select id="auditSales" class="auditor-select">
-                        <option value="EnterprisePlatform">"Enterprise Platform"</option>
-                        <option value="SoftwareApplication" selected>"SoftwareApplication"</option>
-                        <option value="Solution">"Holistic Solution"</option>
-                    </select>
-                </div>
-            </div>
-            <div class="auditor-result-panel">
-                <div class="auditor-score-block">
-                    <div class="score-circle good" id="auditScoreCircle">100%</div>
-                    <div class="score-feedback">
-                        <h4 id="auditFeedbackTitle">Canonical Entity Harmony</h4>
-                        <p id="auditFeedbackDesc">All touchpoints resolve to the exact same canonical entity class. Search models and AI procurement agents have zero ambiguity.</p>
-                    </div>
-                </div>
-                <button class="auditor-fix-btn" id="btnAutoAlign">⚡ Auto-Align Touchpoints</button>
-            </div>
-        </div>
-
         <div class="narrative-block">
             <h3>The Reality: Degrading Entity Confidence</h3>
             <p>By confusing the description of any entity we force search engines and LLMs to try to decode contradictory descriptions, read on page marketing copy and Docs, all of which confuse the AI and erode their confidence. It can also mean you don't show up in LLMs or procurement agents.</p>
@@ -440,7 +276,7 @@
         </blockquote>
 
         <div class="source-foot">
-            <span>📌 Source: <a href="https://spaceandstory.co/blog/structured-data-guide-ai-search-json-ld" target="_blank" rel="noopener noreferrer">Space &amp; Story – The Complete Guide to Structured Data for AI Search</a></span>
+            <span>📌 Source: <a href="https://spaceandstory.co/blog/structured-data-guide-ai-search-json-ld" target="_blank" rel="noopener noreferrer">Space &amp; Story – The Complete Guide to Structured Data for AI Search</a>[cite: 1]</span>
         </div>
     </section>
 
@@ -482,8 +318,8 @@
         </blockquote>
 
         <div class="source-foot">
-            <span>📌 Source: <a href="https://www.gartner.com/en/newsroom/press-releases/2026-03-11-gartner-announces-top-predictions-for-data-and-analytics-in-2026" target="_blank" rel="noopener noreferrer">Gartner Predictions: Semantic Layers</a></span>
-            <span>📌 Source: <a href="https://www.developer-tech.com/news/brave-search-api-revamp-makes-web-search-useful-for-ai-apps/" target="_blank" rel="noopener noreferrer">Developer Tech – Brave Search API revamp makes web search useful for AI apps</a></span>
+            <span>📌 Source: <a href="https://www.gartner.com/en/newsroom/press-releases/2026-03-11-gartner-announces-top-predictions-for-data-and-analytics-in-2026" target="_blank" rel="noopener noreferrer">Gartner Predictions: Semantic Layers</a>[cite: 1]</span>
+            <span>📌 Source: <a href="https://www.developer-tech.com/news/brave-search-api-revamp-makes-web-search-useful-for-ai-apps/" target="_blank" rel="noopener noreferrer">Developer Tech – Brave Search API revamp makes web search useful for AI apps</a>[cite: 1]</span>
         </div>
     </section>
 
@@ -507,47 +343,12 @@
             <p>Standardised Schema ensures page content, metadata, and site architecture work in harmony, preventing future content drift and intent overlap before they ever hit production.</p>
         </div>
 
-        <!-- INTERACTIVE WIDGET 5: Quick Schema.org Knowledge Graph Generator -->
-        <div class="generator-widget">
-            <div class="widget-header">
-                <span class="widget-title">Interactive Tool: Fast Entity Graph Generator</span>
-                <span class="widget-hint">Generate production-ready JSON-LD schema for your product</span>
-            </div>
-            <div class="generator-form-grid">
-                <div class="form-group">
-                    <label for="genBrand">Brand / Organization</label>
-                    <input type="text" id="genBrand" value="Acme Enterprise" placeholder="e.g. Acme Corp">
-                </div>
-                <div class="form-group">
-                    <label for="genProduct">Software / Solution Name</label>
-                    <input type="text" id="genProduct" value="CloudSync Pro" placeholder="e.g. CloudSync Pro">
-                </div>
-                <div class="form-group">
-                    <label for="genCategory">Primary Application Category</label>
-                    <select id="genCategory">
-                        <option value="BusinessApplication" selected>BusinessApplication (SaaS)</option>
-                        <option value="DeveloperApplication">DeveloperApplication (APIs/SDK)</option>
-                        <option value="SecurityApplication">SecurityApplication (Cybersecurity)</option>
-                        <option value="UtilitiesApplication">UtilitiesApplication (Tools)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="genPrice">Pricing / Currency Tier</label>
-                    <input type="text" id="genPrice" value="49 USD / Month" placeholder="e.g. 49 USD">
-                </div>
-            </div>
-            <div class="generator-output-wrap">
-                <button class="copy-badge-btn" id="btnCopyGeneratedSchema">Copy JSON-LD</button>
-                <pre><code id="generatedSchemaCode"></code></pre>
-            </div>
-        </div>
-
         <blockquote class="editorial-quote">
             "Understanding how Google links entities in the Knowledge Graph can help to ensure that the entities and topics you want are connected to your brand. It can also uncover connections between entities you don’t want associated with your brand." <br><span class="quote-author">— Search Engine Land</span>
         </blockquote>
 
         <div class="source-foot">
-            <span>📌 Source: <a href="https://searchengineland.com/guide/knowledge-graph" target="_blank" rel="noopener noreferrer">Search Engine Land – What Is the Knowledge Graph? How It Impacts SEO &amp; Visibility</a></span>
+            <span>📌 Source: <a href="https://searchengineland.com/guide/knowledge-graph" target="_blank" rel="noopener noreferrer">Search Engine Land – What Is the Knowledge Graph? How It Impacts SEO &amp; Visibility</a>[cite: 1]</span>
         </div>
     </section>
 
@@ -593,7 +394,5 @@
     <p>&copy; 2026 Simon Kirrane. Signal/Noise — The Definitive Guide to Knowledge Graphs &amp; GEO.</p>
 </footer>
 
-<!-- Interactive Engine Logic -->
-<script src="script.js"></script>
 </body>
 </html>
