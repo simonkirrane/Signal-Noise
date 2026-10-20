@@ -1,25 +1,27 @@
 /* style.css — Clean Static Editorial Design System */
 
 :root {
-    --bg-page: #f6f8fb;
+    --bg-page: #fbfbfa;
     --bg-card: #ffffff;
-    --bg-elevated: #f1f5f9;
-    --bg-subtle: rgba(0, 0, 0, 0.03);
+    --bg-elevated: #f3f3f0;
+    --bg-subtle: rgba(0, 0, 0, 0.02);
     
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --text-muted: #64748b;
+    --text-primary: #111111;
+    --text-secondary: #444444;
+    --text-muted: #737373;
     
-    --accent-signal: #0284c7;
+    /* Editorial Crimson Accent */
+    --accent-signal: #b91c1c; 
+    
     --border-light: rgba(0, 0, 0, 0.08);
     --border-strong: rgba(0, 0, 0, 0.15);
     
-    --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'IBM Plex Sans', -apple-system, sans-serif;
     --font-serif: 'IBM Plex Serif', Georgia, serif;
     --font-mono: 'IBM Plex Mono', monospace;
     
-    --shadow-card: 0 4px 20px -4px rgba(15, 23, 42, 0.05);
-    --radius-md: 12px;
+    --shadow-card: 0 4px 20px -4px rgba(0, 0, 0, 0.04);
+    --radius-md: 8px;
 }
 
 * {
