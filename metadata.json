@@ -1,8 +1,0 @@
-{
-  "name": "Signal/Noise — Simon Kirrane",
-  "description": "Signal/Noise — Simon Kirrane. The Complete Guide to Structured Data and Knowledge Graphs for AI Search.",
-  "permissions": [],
-  "capabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
