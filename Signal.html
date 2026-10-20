@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://signal.simonkirrane.com/#person",
+      "name": "Simon Kirrane",
+      "jobTitle": "Senior Content Marketing Manager & Lead Content Strategist",
+      "description": "Content strategy specialist helping experts turn deep knowledge into EEAT-rich stories through Generative Engine Optimization (GEO) and structured data architectures.",
+      "url": "https://signal.simonkirrane.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/simon-kirrane/"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Content Strategist",
+        "occupationLocation": {
+          "@type": "Country",
+          "name": "United Kingdom"
+        }
+      },
+      "knowsAbout": [
+        "Generative Engine Optimization",
+        "Structured Data",
+        "Knowledge Graphs",
+        "JSON-LD",
+        "Semantic Layers",
+        "B2B SaaS Content Strategy"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Independent Editorial & Strategy"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://signal.simonkirrane.com/#organization",
+      "name": "Signal/Noise",
+      "url": "https://signal.simonkirrane.com/",
+      "logo": "https://signal.simonkirrane.com/SK.png",
+      "founder": {
+        "@id": "https://signal.simonkirrane.com/#person"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://signal.simonkirrane.com/#website",
+      "url": "https://signal.simonkirrane.com/",
+      "name": "Signal/Noise",
+      "publisher": {
+        "@id": "https://signal.simonkirrane.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://signal.simonkirrane.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://signal.simonkirrane.com/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://signal.simonkirrane.com/#article",
+      "isPartOf": {
+        "@id": "https://signal.simonkirrane.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://signal.simonkirrane.com/#breadcrumb"
+      },
+      "headline": "Signal/Noise — The Complete Guide to Structured Data and Knowledge Graphs for AI Search",
+      "description": "How structuring data for generative engine optimization (GEO) prevents AI models from misinterpreting corporate reality.",
+      "inLanguage": "en-GB",
+      "datePublished": "2026-04-01",
+      "dateModified": "2026-08-16",
+      "mainEntityOfPage": "https://signal.simonkirrane.com/",
+      "author": {
+        "@id": "https://signal.simonkirrane.com/#person"
+      },
+      "publisher": {
+        "@id": "https://signal.simonkirrane.com/#organization"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Generative Engine Optimization"
+        },
+        {
+          "@type": "Thing",
+          "name": "Structured Data"
+        },
+        {
+          "@type": "Thing",
+          "name": "Knowledge Graphs"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Organization",
+          "name": "Brave"
+        },
+        {
+          "@type": "Organization",
+          "name": "IBM"
+        },
+        {
+          "@type": "Organization",
+          "name": "Gartner"
+        }
+      ],
+      "keywords": [
+        "Generative Engine Optimization",
+        "Structured Data",
+        "Knowledge Graphs",
+        "JSON-LD",
+        "Semantic Layer"
+      ]
+    }
+  ]
+}
+</script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signal/Noise — Simon Kirrane. The Complete Guide to Structured Data and Knowledge Graphs for AI Search.">
+    <link rel="canonical" href="https://signal.simonkirrane.com/">
+    <title>Signal/Noise — Simon Kirrane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="SK.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ63PT1VNV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RZ63PT1VNV');
+    </script>
+</head>
+<body>
+
+<!-- Top Navigation Header -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="#top" class="brand-wrapper">
+            <img src="SK.png" alt="Simon Kirrane Logo" class="brand-logo-img">
+            <span class="brand-name"><span class="brand-signal">Signal</span>/<span class="brand-noise">Noise</span></span>
+            <span class="brand-desc">Simon Kirrane</span>
+        </a>
+        <div class="header-actions">
+            <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <span id="themeIcon">☀️</span> <span id="themeLabel">Light</span>
+            </button>
+        </div>
+    </div>
+    <nav class="header-nav" aria-label="Page Sections">
+        <a href="#sec-1" data-target="sec-1">01. The Landscape</a>
+        <a href="#sec-2" data-target="sec-2">02. Paradigm Shift</a>
+        <a href="#sec-3" data-target="sec-3">03. Core Problem</a>
+        <a href="#sec-4" data-target="sec-4">04. Strategy</a>
+        <a href="#sec-5" data-target="sec-5">05. Governance</a>
+        <a href="#sec-6" data-target="sec-6">06. Action Plan</a>
+    </nav>
+</header>
+
+<!-- Main Editorial Document Container -->
+<main class="document-container" id="top">
+
+    <!-- HERO VISUAL & SIGNAL OSCILLOSCOPE -->
+    <section class="hero-visual-card">
+        <div class="hero-meta-tag">
+            <span class="hero-pulse-dot"></span>
+            <span>Generative Engine Optimization (GEO) • 2026 Strategic Blueprint</span>
+        </div>
+        <h1 class="hero-title">The Complete Guide to Structured Data &amp; Knowledge Graphs for AI Search</h1>
+        <p class="hero-subtitle">
+            How structuring data for generative search engines prevents AI models, procurement agents, and zero-click answer engines from misinterpreting corporate reality.
+        </p>
+
+        <!-- Interactive Signal vs. Noise Oscilloscope Simulator -->
+        <div class="oscilloscope-box">
+            <div class="oscilloscope-header">
+                <span class="oscilloscope-label">
+                    <span>⚡ Signal-to-Noise Ratio Analyzer</span>
+                    <span id="signalStatusBadge" style="color: #00f2fe; font-size: 0.72rem; padding: 2px 6px; background: rgba(0, 242, 254, 0.12); border-radius: 4px;">HIGH SIGNAL (92%)</span>
+                </span>
+                <div class="oscilloscope-controls">
+                    <label for="noiseSlider">Clarity Tuning:</label>
+                    <input type="range" id="noiseSlider" min="0" max="100" value="85" title="Adjust Signal/Noise clarity ratio">
+                    <span id="noiseValLabel" style="font-family: var(--font-mono); color: var(--accent-signal);">85% Signal</span>
+                </div>
+            </div>
+            <canvas id="signalCanvas"></canvas>
+            <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: #64748b; margin-top: 0.5rem; font-family: var(--font-mono);">
+                <span>← Chaotic Raw Metaphor (Unstructured)</span>
+                <span>Structured Entity Graph (Machine-Readable) →</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1 -->
+    <section class="doc-section" id="sec-1">
+        <span class="section-counter">01 / THE LANDSCAPE</span>
+        <h1>Naming things matters</h1>
+        
+        <div class="narrative-block">
+            <h3>Traditional SEO has radically changed</h3>
+            <p>Direct answers on Google results pages (AIO), cause over half of all searches to end without a click. Google has shifted its model and if AI can't confidently understand what you are, what you do and what you sell, it won't surface you. On top of that, generative search engines naturally default to established category leaders: if a challenger or specialised product cannot unambiguously instruct the AI on its exact capabilities, pricing, and audience, you'll likely be ignored.</p>
+        </div>
+
+        <div class="narrative-block">
+            <h3>AI Procurement is Coming</h3>
+            <p>In addition to LLMs, AI Agents are now moving to procurement and if they can’t understand or misconstrue your data, you will not show up.</p>
+        </div>
+
+        <blockquote class="editorial-quote">
+            "Marketeers want to appeal to emotions, to needs, to provide solutions, they need to continue to do that, they also need to ensure that what they are selling, to whom and for how much is also delivered unambiguously. Otherwise LLMs in search or procurement could miss or muddle your message."
+        </blockquote>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-val">64%</span>
+                <p class="metric-txt">"Of the CSCOs and COOs surveyed, 64% say gen AI is already transforming their supply chain operations workflows." <br><strong>— IBM</strong></p>
+            </div>
+            <div class="metric-card">
+                <span class="metric-val">Get semantic</span>
+                <p class="metric-txt">"Developing a universal semantic layer is now a must‑do for D&A leaders either leading or supporting AI." <br><strong>— Gartner</strong></p>
+            </div>
+        </div>
+
+        <!-- INTERACTIVE WIDGET 1: Interactive Semantic Hierarchy Explorer -->
+        <div class="interactive-hierarchy-widget">
+            <div class="widget-header">
+                <span class="widget-title">Interactive Model: The Semantic Hierarchy</span>
+                <span class="widget-hint">Click each stage to explore how meaning flows to AI</span>
+            </div>
+            <div class="hierarchy-steps">
+                <button class="hierarchy-step-btn active" data-step="0">
+                    <span class="step-badge">Stage 01</span>
+                    <span>REALITY</span>
+                </button>
+                <button class="hierarchy-step-btn" data-step="1">
+                    <span class="step-badge">Stage 02</span>
+                    <span>ONTOLOGY</span>
+                </button>
+                <button class="hierarchy-step-btn" data-step="2">
+                    <span class="step-badge">Stage 03</span>
+                    <span>SCHEMA</span>
+                </button>
+                <button class="hierarchy-step-btn" data-step="3">
+                    <span class="step-badge">Stage 04</span>
+                    <span>CONTENT</span>
+                </button>
+                <button class="hierarchy-step-btn" data-step="4">
+                    <span class="step-badge">Stage 05</span>
+                    <span>SEARCH &amp; AI</span>
+                </button>
+            </div>
+            <div class="hierarchy-detail-card" id="hierarchyDetailContent">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </div>
+
+        <div class="source-foot">
+            <span>📌 Source: <a href="https://marketingadvice.substack.com/p/ai-search-rewards-category-leaders" target="_blank" rel="noopener noreferrer">AI Search Rewards Category Leaders. Everyone Else Has to Fight Their Way In.</a></span>
+            <span>📌 Source: <a href="https://www.ibm.com/think/topics/ai-agents-in-procurement" target="_blank" rel="noopener noreferrer">IBM — AI Agents in Procurement</a></span>
+        </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="doc-section" id="sec-2">
+        <span class="section-counter">02 / THE PARADIGM SHIFT</span>
+        <h1>From Rich Results to Machine Maps</h1>
+        
+        <div class="narrative-block">
+            <h3>Traditional to AI-Readable</h3>
+            <p>Google Schema used to be about ranking top in the list of blue links (SERPS). Today, it’s a layer of translation between human-focussed web content and AI data engines.</p>
+        </div>
+
+        <div class="narrative-block">
+            <h3>Structured Entities over Strings</h3>
+            <p>Generative search engines (Various LLMs, AI Overviews) don't just index text strings, they synthesise structured entities and measure relationships.</p>
+        </div>
+
+        <div class="schema-strategy-block">
+            <span class="code-label">Case in Point: How Brave Ask Actually Reads the Web</span>
+            <p><strong>This isn't theoretical.</strong> DEJAN AI's reverse-engineering of Brave's Ask system instructions shows the mechanism in production. Brave's pipeline doesn't hand a language model whole pages to interpret — it breaks roughly 210 retrieved pages down into an average of 6,257 discrete statements before the model ever sees them.</p>
+            <p>The model is explicitly instructed to ground every claim in that extracted evidence and is barred from filling gaps with its own knowledge. Separately, Brave's LLM Context API confirms this discipline extends to the retrieval layer itself: when converting pages into structured context for LLMs, the system preserves JSON-LD schemas and table data with row-level granularity, rather than flattening everything into raw text. Structured markup on the page survives the journey into the model's context — it isn't discarded in favour of prose.</p>
+        </div>
+
+        <!-- INTERACTIVE WIDGET 2: LLM Simulator Lens -->
+        <div class="llm-lens-widget">
+            <div class="widget-header">
+                <span class="widget-title">Live Simulator: LLM Extraction Lens</span>
+                <span class="widget-hint">Toggle modes to see what generative retrieval pipelines extract</span>
+            </div>
+            <div class="llm-toggle-bar">
+                <button class="llm-toggle-btn active" id="btnLensNoSchema">
+                    <span>❌ <strong>Without Schema</strong> (Metaphor &amp; Prose Only)</span>
+                    <span style="font-size: 0.75rem; color: var(--accent-rose);">Low Entity Confidence</span>
+                </button>
+                <button class="llm-toggle-btn" id="btnLensSchema">
+                    <span>✅ <strong>With Canonical Schema</strong> (Explicit JSON-LD)</span>
+                    <span style="font-size: 0.75rem; color: var(--accent-emerald);">High Citation Certainty</span>
+                </button>
+            </div>
+            <div class="lens-view-grid">
+                <div class="lens-box">
+                    <span class="lens-box-title">
+                        <span>Human-Facing Marketing Copy</span>
+                        <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">PAGE CONTENT</span>
+                    </span>
+                    <p class="lens-copy-text" id="lensInputCopy">
+                        "Unlock next-gen synergy with our holistic cloud-native ecosystem. We supercharge cross-functional collaboration and streamline workflows at scale."
+                    </p>
+                    <div style="font-size: 0.78rem; color: var(--text-muted); background: var(--bg-subtle); padding: 0.75rem; border-radius: 4px;">
+                        💡 <em>Notice: Words like "ecosystem", "synergy", and "holistic" offer high emotional resonance to humans, but zero entity boundaries for AI crawlers.</em>
+                    </div>
+                </div>
+                <div class="lens-box">
+                    <span class="lens-box-title">
+                        <span>Synthesized LLM Knowledge Representation</span>
+                        <span id="lensConfidenceBadge" style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-rose); font-weight: 600;">AMBIGUOUS (42%)</span>
+                    </span>
+                    <div class="llm-output-card" id="lensOutputCode">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div class="confidence-bar-wrap">
+                        <div class="confidence-label">
+                            <span>Entity Grounding Confidence</span>
+                            <span id="confidencePercent">42%</span>
+                        </div>
+                        <div class="confidence-progress">
+                            <div class="confidence-fill" id="confidenceBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="body-copy">Humans like storytelling and that's what marketing copy does, it's nuanced and human. LLMs like entities and relationships. So if we force LLMs to guess what our software or organisation is by making them read human-focussed marketing content we can confuse them leading to poor or no results. With LLMs inference is much less reliable than instruction.</p>
+        
+        <blockquote class="editorial-quote">
+            "The core mission remains unchanged: to connect your solution with the people looking for it. However, the mechanism has shifted from “keywords and links” to “entities and trust.” By structuring your data for agents, building radical authority through experience, and owning the “messy middle” of comparison, you can ensure that your brand isn’t just found—it is chosen." <br><span class="quote-author">— Yotpo</span>
+        </blockquote>
+        
+        <div class="source-foot">
+            <span>📌 Source: <a href="https://www.yotpo.com/blog/generative-engine-optimization/" target="_blank" rel="noopener noreferrer">Yotpo – Generative Engine Optimization: The Complete Guide to Ranking in AI Search</a></span>
+            <span>📌 Source: <a href="https://dejan.ai/blog/brave-ai-search/" target="_blank" rel="noopener noreferrer">DEJAN AI – How Brave's AI Search Works</a></span>
+            <span>📌 Source: <a href="https://www.developer-tech.com/news/brave-search-api-revamp-makes-web-search-useful-for-ai-apps/" target="_blank" rel="noopener noreferrer">Developer Tech – Brave Search API revamp makes web search useful for AI apps</a></span>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="doc-section" id="sec-3">
+        <span class="section-counter">03 / THE CORE PROBLEM</span>
+        <h1>Confusion Causes Chaos</h1>
+        
+        <div class="narrative-block">
+            <h3>Our Biggest Blind Spot</h3>
+            <p>Internal inconsistency is our biggest blind spot in the generative age. Relying on contradictory or misaligned labels weakens entity clarity.</p>
+        </div>
+
+        <div class="narrative-block">
+            <h3>Mixed Signals = Noise</h3>
+            <p>When marketing labels a tool a ‘Product’, documentation calls it an ‘App’, sales copy uses complex metaphors, and pages lack consistent structured data, machine crawlers get mixed signals. For example when I audited our Schema, I found our app was classified as 'Product' on our site, 'Software App' on the Marketplace, and absent from our documentation. We fixed this by establishing a single canonical definition ensuring every touchpoint used consistent entity typing.</p>
+        </div>
+
+        <!-- INTERACTIVE WIDGET 3: Entity Ambiguity Auditor -->
+        <div class="auditor-widget">
+            <div class="widget-header">
+                <span class="widget-title">Interactive Audit: Cross-Channel Entity Drift Simulator</span>
+                <span class="widget-hint">Change labels across touchpoints to see how entity ambiguity destroys confidence</span>
+            </div>
+            <div class="auditor-grid">
+                <div class="auditor-card">
+                    <span class="auditor-touchpoint">🌐 Main Website</span>
+                    <select id="auditWeb" class="auditor-select">
+                        <option value="Product">"Product"</option>
+                        <option value="SoftwareApplication" selected>"SoftwareApplication"</option>
+                        <option value="Ecosystem">"Cloud Ecosystem"</option>
+                        <option value="Tool">"Free Tool"</option>
+                    </select>
+                </div>
+                <div class="auditor-card">
+                    <span class="auditor-touchpoint">📖 Documentation</span>
+                    <select id="auditDocs" class="auditor-select">
+                        <option value="None">"None (No Schema)"</option>
+                        <option value="SoftwareApplication" selected>"SoftwareApplication"</option>
+                        <option value="App">"Add-on App"</option>
+                        <option value="APIReference">"API Reference"</option>
+                    </select>
+                </div>
+                <div class="auditor-card">
+                    <span class="auditor-touchpoint">🛍️ Marketplace Listing</span>
+                    <select id="auditMarket" class="auditor-select">
+                        <option value="SoftwareApplication" selected>"SoftwareApplication"</option>
+                        <option value="Plugin">"Browser Plugin"</option>
+                        <option value="Product">"Product"</option>
+                        <option value="App">"App"</option>
+                    </select>
+                </div>
+                <div class="auditor-card">
+                    <span class="auditor-touchpoint">💼 Sales &amp; Deck</span>
+                    <select id="auditSales" class="auditor-select">
+                        <option value="EnterprisePlatform">"Enterprise Platform"</option>
+                        <option value="SoftwareApplication" selected>"SoftwareApplication"</option>
+                        <option value="Solution">"Holistic Solution"</option>
+                    </select>
+                </div>
+            </div>
+            <div class="auditor-result-panel">
+                <div class="auditor-score-block">
+                    <div class="score-circle good" id="auditScoreCircle">100%</div>
+                    <div class="score-feedback">
+                        <h4 id="auditFeedbackTitle">Canonical Entity Harmony</h4>
+                        <p id="auditFeedbackDesc">All touchpoints resolve to the exact same canonical entity class. Search models and AI procurement agents have zero ambiguity.</p>
+                    </div>
+                </div>
+                <button class="auditor-fix-btn" id="btnAutoAlign">⚡ Auto-Align Touchpoints</button>
+            </div>
+        </div>
+
+        <div class="narrative-block">
+            <h3>The Reality: Degrading Entity Confidence</h3>
+            <p>By confusing the description of any entity we force search engines and LLMs to try to decode contradictory descriptions, read on page marketing copy and Docs, all of which confuse the AI and erode their confidence. It can also mean you don't show up in LLMs or procurement agents.</p>
+        </div>
+
+        <blockquote class="editorial-quote">
+            "Structured data is defined as a standardised format for providing explicit information about a page's content to search engines and AI platforms." <br><span class="quote-author">— Space and Story</span>
+        </blockquote>
+
+        <div class="source-foot">
+            <span>📌 Source: <a href="https://spaceandstory.co/blog/structured-data-guide-ai-search-json-ld" target="_blank" rel="noopener noreferrer">Space &amp; Story – The Complete Guide to Structured Data for AI Search</a></span>
+        </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="doc-section" id="sec-4">
+        <span class="section-counter">04 / THE STRATEGY</span>
+        <h1>Beyond App Schema: Build a Coherent Knowledge Graph</h1>
+  
+        <div class="narrative-block">
+            <h3>The Semantic Shift</h3>
+            <p>When every department creates different descriptions of the same thing. AI systems don't reconcile those differences as well as humans do. Therefore, organizations need one canonical semantic representation.</p>
+        </div>
+
+        <div class="narrative-block">
+            <h3>Schema is the medium, not the message</h3>
+            <p>The narrative here is not <em>"Let's implement structured data"</em> it's <em>"Let's create a canonical semantic model for the company."</em> Schema is important, but not just as a technical checkbox at the bottom of the stack; it is the canonical semantic model for the company. Agree on the shared ontology first, then express it consistently through Schema and let everything else inherit from it. That way LLMs, customers, partners and procurement agents all understand who and what you are, what you're selling and what it does.</p>
+        </div>
+
+        <div class="narrative-block">
+            <h3>Structured Context Beats Model Size</h3>
+            <p>Brave's own benchmarking makes the case concrete. Running on the smaller, open-weight Qwen3 model, their Ask Brave assistant which is grounded in the same structured context pipeline that preserves JSON-LD schema and table data (as described on slide 2), outperformed Google AI Mode and ChatGPT on a 1,500-query evaluation. A smaller model with better structured context beat larger ones. This is the direct payoff of the argument in Section 2: schema isn't a nice-to-have for AI visibility, it's a measurable input to answer quality that a bigger model can't fully compensate for.</p>
+        </div>
+
+        <div class="schema-strategy-block">
+            <span class="code-label">Strategic Takeaway: Schema as the Bedrock of Messaging</span>
+            <p><strong>Start with Schema to define your reality, then build all messaging upon it.</strong></p>
+            <p>We use explicit Schema to anchor every dimension of our business for machines:</p>
+            <ul>
+                <li><strong>What it is:</strong> Defining the product as a <code>SoftwareApplication</code> with explicit <code>featureList</code> properties.</li>
+                <li><strong>Who owns it:</strong> Attaching verified <code>Organization</code> and author credentials.</li>
+                <li><strong>What it costs:</strong> Hardcoding clear pricing tiers and trial parameters (<code>Offer</code>).</li>
+                <li><strong>Where else it lives:</strong> Using <code>sameAs</code> to connect external channels—social profiles, YouTube demos, and marketplace listings.</li>
+            </ul>
+            <p class="code-sub">Once this machine-readable source of truth is locked, we translate it directly into our marketing copy, documentation, and external touchpoints. Agree on the Schema first, and let the content flow from there.</p>
+        </div>
+
+        <blockquote class="editorial-quote">
+            "Developing a universal semantic layer is now a must‑do for D&A leaders either leading or supporting AI. It is the only way to improve accuracy, manage costs, substantially cut AI debt, align multiagent systems, and stop costly inconsistencies before they spread. D&A leaders must budget for semantic capabilities as a nonnegotiable foundation." <br><span class="quote-author">— Gartner</span>
+        </blockquote>
+
+        <div class="source-foot">
+            <span>📌 Source: <a href="https://www.gartner.com/en/newsroom/press-releases/2026-03-11-gartner-announces-top-predictions-for-data-and-analytics-in-2026" target="_blank" rel="noopener noreferrer">Gartner Predictions: Semantic Layers</a></span>
+            <span>📌 Source: <a href="https://www.developer-tech.com/news/brave-search-api-revamp-makes-web-search-useful-for-ai-apps/" target="_blank" rel="noopener noreferrer">Developer Tech – Brave Search API revamp makes web search useful for AI apps</a></span>
+        </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="doc-section" id="sec-5">
+        <span class="section-counter">05 / GOVERNANCE &amp; STANDARDISATION</span>
+        <h1>Schema as an Operational Framework</h1>
+        
+        <div class="narrative-block">
+            <h3>Team Alignment</h3>
+            <p>Schema isn't just a technical SEO trick for developers; it’s an operational standard for team content alignment.</p>
+        </div>
+
+        <div class="narrative-block">
+            <h3>Upfront Guardrails</h3>
+            <p>Agreeing on naming, taxonomy, and entity labeling up front sets clear guardrails across ALL content, product, and engineering teams. As Schema is the most stripped down, it makes sense to start there.</p>
+        </div>
+
+        <div class="narrative-block">
+            <h3>Strategic Takeaway: Operational Harmony</h3>
+            <p>Standardised Schema ensures page content, metadata, and site architecture work in harmony, preventing future content drift and intent overlap before they ever hit production.</p>
+        </div>
+
+        <!-- INTERACTIVE WIDGET 5: Quick Schema.org Knowledge Graph Generator -->
+        <div class="generator-widget">
+            <div class="widget-header">
+                <span class="widget-title">Interactive Tool: Fast Entity Graph Generator</span>
+                <span class="widget-hint">Generate production-ready JSON-LD schema for your product</span>
+            </div>
+            <div class="generator-form-grid">
+                <div class="form-group">
+                    <label for="genBrand">Brand / Organization</label>
+                    <input type="text" id="genBrand" value="Acme Enterprise" placeholder="e.g. Acme Corp">
+                </div>
+                <div class="form-group">
+                    <label for="genProduct">Software / Solution Name</label>
+                    <input type="text" id="genProduct" value="CloudSync Pro" placeholder="e.g. CloudSync Pro">
+                </div>
+                <div class="form-group">
+                    <label for="genCategory">Primary Application Category</label>
+                    <select id="genCategory">
+                        <option value="BusinessApplication" selected>BusinessApplication (SaaS)</option>
+                        <option value="DeveloperApplication">DeveloperApplication (APIs/SDK)</option>
+                        <option value="SecurityApplication">SecurityApplication (Cybersecurity)</option>
+                        <option value="UtilitiesApplication">UtilitiesApplication (Tools)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="genPrice">Pricing / Currency Tier</label>
+                    <input type="text" id="genPrice" value="49 USD / Month" placeholder="e.g. 49 USD">
+                </div>
+            </div>
+            <div class="generator-output-wrap">
+                <button class="copy-badge-btn" id="btnCopyGeneratedSchema">Copy JSON-LD</button>
+                <pre><code id="generatedSchemaCode"></code></pre>
+            </div>
+        </div>
+
+        <blockquote class="editorial-quote">
+            "Understanding how Google links entities in the Knowledge Graph can help to ensure that the entities and topics you want are connected to your brand. It can also uncover connections between entities you don’t want associated with your brand." <br><span class="quote-author">— Search Engine Land</span>
+        </blockquote>
+
+        <div class="source-foot">
+            <span>📌 Source: <a href="https://searchengineland.com/guide/knowledge-graph" target="_blank" rel="noopener noreferrer">Search Engine Land – What Is the Knowledge Graph? How It Impacts SEO &amp; Visibility</a></span>
+        </div>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section class="doc-section" id="sec-6">
+        <span class="section-counter">06 / SUMMARY &amp; ACTION PLAN</span>
+        <h1>The Way Forward: Clarity, Organisation, Discovery</h1>
+        
+        <div class="action-steps">
+            <div class="action-step-item">
+                <span class="step-num">1</span>
+                <div>
+                    <h4>Standardise Vocabulary</h4>
+                    <p>Establish agreed naming conventions for core products and software across all team silos.</p>
+                </div>
+            </div>
+            <div class="action-step-item">
+                <span class="step-num">2</span>
+                <div>
+                    <h4>Implement Cross-Entity Schema</h4>
+                    <p>Deploy agreed Schema for organisations, apps, authors, and any entity touchpoints. (The Sanity CMS has a ‘deploy once’ feature, if we don’t use that use a <code>sameAs</code> pointer in the main object's Schema.)</p>
+                </div>
+            </div>
+            <div class="action-step-item">
+                <span class="step-num">3</span>
+                <div>
+                    <h4>Enforce Single Canonical Paths</h4>
+                    <p>Protect entity authority and stop internal confusion before publishing.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="closing-thought-box">
+            <span class="closing-label">Closing Thought</span>
+            <p>The organisations that will win in the AI era won't be the ones with the snappiest marketing copy. They'll be the ones whose entities are described so unambiguously that no machine, search engine, procurement agent, or LLM, could mistake them. I help companies build that semantic foundation, so their oh-so snappy copy gets seen. Let's talk about what that could look like for you.</p>
+            <a href="mailto:simonkirrane1@gmail.com" class="clean-cta-btn">Email me →</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Simon Kirrane. Signal/Noise — The Definitive Guide to Knowledge Graphs &amp; GEO.</p>
+</footer>
+
+<!-- Interactive Engine Logic -->
+<script src="script.js"></script>
+</body>
+</html>
