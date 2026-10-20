@@ -1,6 +1,4 @@
-// script.js — Dedicated JavaScript Layer for Signal/Noise
 document.addEventListener("DOMContentLoaded", function () {
-    
     // 1. Reading Progress Bar Logic
     const progressBar = document.createElement("div");
     progressBar.id = "read-progress-bar";
@@ -48,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.forEach(link => {
             link.style.color = "#525252"; 
             link.style.fontWeight = "500";
-            if (link.getAttribute("data-target") === current) {
+            if (link.getAttribute("href") === "#" + current) {
                 link.style.color = "#0f62fe"; 
                 link.style.fontWeight = "600";
             }
