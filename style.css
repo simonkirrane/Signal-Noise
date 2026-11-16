@@ -433,3 +433,13 @@ body {
     .doc-section h1 { font-size: 1.75rem; }
     .metrics-grid { grid-template-columns: 1fr; }
 }
+.brand-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px; /* adjusts spacing between SK logo, title, and your name */
+}
+.brand-wrapper:hover {
+  opacity: 0.8; /* subtle hover effect */
+}
